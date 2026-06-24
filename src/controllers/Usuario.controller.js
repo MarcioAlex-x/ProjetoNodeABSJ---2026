@@ -1,4 +1,4 @@
-import usuariosService from "../services/usuarios.service.js";
+import usuariosService from "../services/Usuarios.service.js";
 
 class UsuarioController {
   async criar(req, res) {
@@ -85,7 +85,7 @@ class UsuarioController {
         cidade,
         estado,
       } = req.body;
-      
+
       const usuarioAtualizado = await usuariosService.atualizarUsuario(
         nome,
         email,
