@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
   res.send("Aplicação NodeJS");
 });
 
-sequelize.sync({alter: true}).then(() => {
+sequelize.sync({alter: false}).then(() => {
   console.log("Tabelas sincronizadas no banco de dados com sucesso.");
   app.listen(port, () => {
     console.log(`Aplicacao rodando em http://localhost:${port}`);
