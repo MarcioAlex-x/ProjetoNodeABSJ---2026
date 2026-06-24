@@ -87,6 +87,7 @@ class UsuarioController {
       } = req.body;
 
       const usuarioAtualizado = await usuariosService.atualizarUsuario(
+        id,
         nome,
         email,
         descricao,
